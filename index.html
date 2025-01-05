@@ -1,0 +1,135 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles/style.css">
+<script type="text/javascript">
+	openSideBar = function (){
+		if( this.document.getElementById("sidebar").style.width == "15rem"){
+			this.document.getElementById("sidebar").style.width = "0rem";
+		} else {
+			this.document.getElementById("sidebar").style.width = "15rem";
+		}
+
+	}
+	
+	showContent = function(id) {
+		
+		var idVar = 1;
+		while(idVar <= 4){
+		var contId = "content-" + idVar;
+		if( idVar == id){
+			this.document.getElementById(contId).classList.add("continent-show");
+			this.document.getElementById(contId).classList.remove("continent");
+		 } else {	
+			this.document.getElementById(contId).classList.add("continent");
+			this.document.getElementById(contId).classList.remove("continent-show");
+		}
+		idVar++;
+		}
+	}
+</script>
+<title>
+The Effect of Global Warming in Different Continents
+</title>
+ </head>
+ <body>
+ <h1>
+	<div id="heading-1">What is Global Warming?</div>
+	<div id="menu-1" onclick="openSideBar();">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+ </h1>
+ <div id="sidebar">
+	<div class="closeBtn" onclick="openSideBar();">
+		<div></div>
+		<div></div>
+	</div>
+	<ul class="list-continent">
+		<li onclick="showContent(1);">North America</li>
+		<li onclick="showContent(2);">South America</li>
+		<li onclick="showContent(3);">Europe</li>
+		<li onclick="showContent(4);">Africa</li>
+	</ul>
+ </div>
+ 
+ <div id="content" style="font-family: Rockwell, sans-serif; color: white;">
+	<b>Global warming</b> refers to the long-term rise in the Earth's average surface temperature due to human activities, primarily the emission of greenhouse gases like carbon dioxide (CO₂) from the burning of fossil fuels, deforestation, and industrial processes. This phenomenon impacts all continents, although the effects can vary greatly by region. Here's a breakdown of how global warming is affecting each continent.
+	<hr/>
+	<ol>
+		<li id="content-1" class="continent">
+			<b>North America</b>
+			<ul>
+				<li>
+					<b>Temperature Rise:</b>
+					North America, particularly the United States and Canada, has experienced significant temperature increases. The warming has been more pronounced in the northern regions, especially in Canada and Alaska, where temperatures are rising at twice the global average rate.
+				</li>
+				<li>
+					<b>Wildfires:</b>
+					Increased heat and droughts have led to more frequent and intense wildfires, especially in California, the western U.S., and parts of Canada. These fires threaten ecosystems, air quality, and human health.
+				</li>
+				<li>
+					<b>Extreme Weather:</b>
+					The continent has seen more frequent extreme weather events, such as hurricanes in the Gulf of Mexico, flooding in the Midwest, and intense heat waves.
+				</li>
+				<li>
+					<b>Melting Ice:</b>
+					Arctic regions of Canada and Alaska are experiencing rapid ice melt, contributing to rising sea levels and the potential loss of habitats for indigenous wildlife.
+				</li>
+			</ul>
+		</li>
+		<li id="content-2" class="continent">
+		<b>South America</b>
+			<ul>
+				<li>
+				<b>Deforestation:</b>
+					In the Amazon rainforest, often referred to as the "lungs of the Earth," deforestation for agriculture and logging has reduced the forest's capacity to absorb CO₂. This contributes to global warming while also disrupting local weather patterns and biodiversity.
+				</li>
+				<li>
+				<b>Glacier Retreat:</b>
+				The Andes mountains have seen the retreat of glaciers, which are important sources of water for millions of people in South America. This impacts water availability and agriculture, especially in countries like Peru and Bolivia.
+				</li>
+				<li>
+				<b>Flooding and Drought:</b>
+					South America has faced increasing variability in weather patterns, with some regions experiencing more severe droughts (like in Argentina) and others suffering from devastating floods (such as in Colombia and Brazil).
+				</li>
+			</ul>
+		</li>
+		<li id="content-3" class="continent">
+		<b>Europe</b>
+			<ul>
+				<li>
+				<b>Heatwaves:</b>
+					Europe has experienced more intense and prolonged heatwaves, with 2003, 2019, and 2022 being notable for their extreme temperatures, particularly in southern Europe. These heatwaves strain water resources, agriculture, and human health.
+				</li>
+				<li>
+				<b>Rising Sea Levels:</b> 
+				Coastal areas, especially the Netherlands, Venice, and the UK, face risks from rising sea levels. Venice has struggled with more frequent flooding, while the Netherlands has invested heavily in flood protection.
+				</li>
+				<li>
+				<b>Melting Glaciers:</b>
+				 European Alps and other mountain ranges are seeing the loss of glaciers, which threatens tourism, water supplies, and ecosystems that depend on snowmelt.
+				</li>
+				<li>
+				<b>Shifting Ecosystems:</b>
+				Warmer temperatures are shifting ecosystems, leading to changes in agricultural patterns and the distribution of species. Some areas, like Scandinavia, are benefiting from longer growing seasons, but other areas are seeing agricultural yields decrease due to droughts or too much rain.
+				</li>
+			</ul>
+		</li>
+		<li id="content-4" class="continent">
+		<b>Africa</b>
+			<ul>
+				<li>
+				<b>Increased Heat and Droughts:</b> 
+				Africa is highly vulnerable to climate change. In northern Africa and the Sahel, increasing temperatures and reduced rainfall are contributing to severe droughts, desertification, and food insecurity. These impacts are exacerbating poverty and driving migration.
+				</li>
+				<li>
+				<b>Water Scarcity:</b>
+				Countries like Egypt, Sudan, and Ethiopia rely on the Nile River for water, and any disruption in rainfall or glacier melt in the Ethiopian Highlands (which feeds the Nile) can lead to serious water shortages.
+				</li>
+			</ul>
+		</li>
+	</ol>
+</div>
+</body>
+</html>
