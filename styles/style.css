@@ -1,0 +1,94 @@
+body {
+	background-color: #4A90E2;
+}
+
+h1 {
+	background: white;
+    display: flex;
+    align-items: center;
+    font-family: Arial;
+    margin: 2rem;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+#menu-1 {
+	width; 45rem;
+	cursor: pointer;
+}
+
+#menu-1 div {
+	width: 3rem;
+	height: 0.5rem;
+	background-color: blue;
+	margin: 6px 0;
+}
+
+#heading-1 {
+	width: 45rem;
+}
+
+#sidebar {
+	width: 0rem;
+	height: 30rem;
+	background: orangered;
+	z-index: 1;
+	position: fixed;
+	right: 0.1rem;
+	top: 2rem;
+	display: block;
+	transition: 0.5s;
+}
+
+.closeBtn {
+	position: relative;
+	top: 1rem;
+	left: 12rem;
+	cursor: pointer;
+}
+.closeBtn div{
+	width: 2rem;
+	height: 0.2rem;
+	background-color: yellow;
+}
+
+.closeBtn div:first-child {
+		transform: rotate(43deg);
+		margin-left: 0.1rem;
+}
+.closeBtn div:last-child {
+		transform: rotate(317deg);
+		margin-left: 0.1rem;
+}
+
+#content {
+	margin-left: 1rem;
+	margin-right: 2rem;
+}
+
+.list-continent {
+	margin-top: 5rem;
+	font-family: Arial;
+}
+.list-continent li{
+	cursor: pointer;
+	margin-bottom: 2rem;
+	list-style-type: none;
+	padding: 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	background: #04AA6D;
+	margin-right: 1rem;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 1rem;
+}
+
+.continent {
+	display: none;
+}
+
+.continent-show {
+	display: block;
+}
